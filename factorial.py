@@ -11,3 +11,6 @@ else:
 
 
 print(facto)    
+
+#valdra la pena buscar algun metodo de recursion o mas eficiente
+
