@@ -1,7 +1,13 @@
 #factorial 
 num=5 
-for i in range(5,0,-1):
-    if i == 5:
-        continue
-    facto=i*i+1
-print(facto)
+facto=1
+if num < 0:
+    print("Factorial does not exist for negative numbers")
+elif num == 0:
+    print("The factorial of 0 is 1")
+else:
+    for i in range(num,0,-1):
+        facto *= i
+
+
+print(facto)    
