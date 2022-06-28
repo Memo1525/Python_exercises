@@ -36,7 +36,7 @@ root.insert('k')
 
 #-----------------------------------------------------------
 #another way to do 
-graph = {
+""" graph = {
   'A' : ['B','C'],
   'B' : ['D', 'E'],
   'C' : ['F'],
@@ -62,4 +62,33 @@ def bfs(visited, graph, node):
         queue.append(neighbour)
 
 # Driver Code
-bfs(visited, graph, 'A')
+bfs(visited, graph, 'A') """
+
+
+#graph = node + edges 
+#directed graph has arrows 
+#undirected graphs don't have arrows 
+
+
+#graph can be represented with adjacency list 
+graph = {
+  'A' : ['B','C'],
+  'B' : ['D', 'E'],
+  'C' : ['F'],
+  'D' : [],
+  'E' : ['F'],
+  'F' : []
+}
+
+#depth first traversal  # stack  LIFO
+#the direction that you choose you must go ahead with this until you satisfy 
+#one direction as far as posible until you turn 
+
+#breath first traversal  #queue FIFO
+# tend to explore all directions all neighoborgouds 
+sumatoria=0
+for i in range(11):
+  sumatoria+=i
+  
+print(sumatoria )
+# es posible pasßarle un iterable a la funcion sum e imprimira la suma de lo que le pasemos 
