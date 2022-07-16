@@ -1,5 +1,4 @@
 #factorial 
-from audioop import reverse
 
 
 num=5 
@@ -39,3 +38,5 @@ while num > 0:
     reminder = num %10 #this will give us the last number 
     reverse_number *= 10 + reminder 
     num //=10 #this will reduce the number by one by one 
+    
+    reminder =num%10

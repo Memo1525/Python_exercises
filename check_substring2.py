@@ -11,3 +11,8 @@ for i in range(len(string)):
     if string[i:i+len(substring)] == substring:
         contador2+=1
 print(contador2)
+
+for i in range(len(string)):
+    if string[i:i+len(substring)] == substring:
+        contador2+=1
+print(contador2)
